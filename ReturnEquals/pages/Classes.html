@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Return Equals-Classes</title>
+	<link rel="stylesheet" href="../styles/category.css">
+</head>
+<body>
+	<header>
+		<h1>Return Equals</h1>
+	</header>
+    <nav id="nav_menu">
+    	<ul>
+       		<li><a href="../Home.html">Home</a></li>
+       		<li><a href="#">Category</a>
+				<ul>
+					<li><a href="Basic_codes.html">Basics</a></li>
+               		<li><a href="Mathematics.html">Mathematics</a></li>
+					<li><a href="Classes.html">Classes</a></li>
+					<li><a href="FlowControl.html">Flow Control</a></li>
+					<li><a href="Files.html">Editing Files</a></li>
+           		</ul>
+			</li>
+       		<li><a href="#"> About Us</a>
+           		<ul>
+					<li><a href="Joker.html">Johnny</a></li>
+               		<li><a href="Riddler.html">Zac</a></li>
+           		</ul>
+       		</li>
+			<li><a href="#">Contact Us</a>
+				<ul>
+					<li><a href="mailto:cretrolize@yahoo.com?subject=Feedback">Feedback</a></li>
+					<li><a href="mailto:johnnyjimenez1993gmail.com?subject=Request">Request</a></li>
+				</ul>
+			</li>
+    	</ul>
+    </nav>
+    <main>
+        <h2>String Class</h2>
+			<article>
+				<p>The String class represents character strings. All string literals in Java programs, such as "abc", are implemented as instances of this class.
+					Strings are constant; their values cannot be changed after they are created. String buffers support mutable strings. Because String objects are immutable they can be shared. For example:</p><br>
+				<p>String str = "abc";</p><br>
+				<p>is equivalent to:</p><br>
+				<p>char data[] = {'a', 'b', 'c'}; String str = new String(data);</p><br>
+					<h3><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html">For more information on the String Class click here</a></h3>
+				</article>
+					<h2>Scanner Class</h2>
+						<article>
+							<p>A simple text scanner which can parse primitive types and strings using regular expressions.</p><br>
+							<p>A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace. The resulting tokens may then be converted into values of different types using the various next methods.</p><br>
+							<p>For example, this code allows a user to read a number from System.in:</p>
+							<p>Scanner sc = new Scanner(System.in);
+							int i = sc.nextInt();</p>
+							<p>As another example, this code allows long types to be assigned from entries in a file myNumbers:</p>
+							<p>Scanner sc = new Scanner(new File("myNumbers")); while (sc.hasNextLong()) { long aLong = sc.nextLong(); }</p>
+							<p>The scanner can also use delimiters other than whitespace. This example reads several items in from a string:</p>
+							<p>String input = "1 fish 2 fish red fish blue fish";</p>
+							<p>SScanner s = new Scanner(input).useDelimiter("\\s*fish\\s*");</p>
+							<p>SSystem.out.println(s.nextInt());</p>
+							<p>SSystem.out.println(s.nextInt());</p>
+							<p>SSystem.out.println(s.next());</p>
+							<p>SSystem.out.println(s.next());</p>
+							<p>Ss.close();</p><br>
+							<p>Sprints the following output:</p>
+							<p>1</p>
+							<p>2</p>
+							<p>red</p>
+							<p>blue</p><br>
+								<h3><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html">For more information on the Scanner Class click here</a></h3>
+						</article>
+							<h2>JOptionPane Class</h2>
+						<article>
+							<p>JOptionPane makes it easy to pop up a standard dialog box that prompts users for a value or informs them of something. For information about using JOptionPane, see How to Make Dialogs, a section in The Java Tutorial.</p><br>
+							<p>While the JOptionPane class may appear complex because of the large number of methods, almost all uses of this class are one-line calls to one of the static showXxxDialog methods shown below:</p><br>
+							<p>Method Name				Description</p>
+							<p>showConfirmDialog		Asks a confirming question, like yes/no/cancel.<p>
+							<p>showInputDialog			Prompt for some input.<p>
+							<p>showMessageDialog		Tell the user about something that has happened.<p>
+							<p>showOptionDialog			The Grand Unification of the above three.<p><br>
+							<p>Each of these methods also comes in a showInternalXXX flavor, which uses an internal frame to hold the dialog box (see JInternalFrame). Multiple convenience methods have also been defined -- overloaded versions of the basic methods that use different parameter lists.</p>
+							<p>All dialogs are modal. Each showXxxDialog method blocks the caller until the user's interaction is complete.</p><br>
+								<h3><a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html">For more information on the JOptionPane Class click here</a></h3>
+							</article>
+						<h2>PrintWriter Class</h2>
+							<article>
+								<p>Prints formatted representations of objects to a text-output stream. This class implements all of the print methods found in PrintStream. It does not contain methods for writing raw bytes, for which a program should use unencoded byte streams.</p><br>
+								<p>Unlike the PrintStream class, if automatic flushing is enabled it will be done only when one of the println, printf, or format methods is invoked, rather than whenever a newline character happens to be output. These methods use the platform's own notion of line separator rather than the newline character.</p><br>
+								<p>Methods in this class never throw I/O exceptions, although some of its constructors may. The client may inquire as to whether any errors have occurred by invoking checkError().</p><br>
+									<h3><a href="http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html">For more information on the PrintWriter Class click here</a></h3>
+								</article>
+							<h2>Random Class</h2>
+								<article>
+									<p>The algorithms implemented by class Random use a protected utility method that on each invocation can supply up to 32 pseudorandomly generated bits.</p><br>
+									<p>Many applications will find the method Math.random() simpler to use.</p><br>
+									<p>Instances of java.util.Random are threadsafe. However, the concurrent use of the same java.util.Random instance across threads may encounter contention and consequent poor performance. Consider instead using ThreadLocalRandom in multithreaded designs.</p><br>
+									<p>Instances of java.util.Random are not cryptographically secure. Consider instead using SecureRandom to get a cryptographically secure pseudo-random number generator for use by security-sensitive applications.</p><br>
+								<h3><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Random.html">For more information on the Random Class click here</a></h3>
+							</article>
+						<br>
+					<h3><a href="http://docs.oracle.com/javase/7/docs/api/allclasses-noframe.html"><em>For more information on any other Class's click here</em></a></h3>
+				</main>    
+			<footer>
+		<p><h3>&copy;Return Equals</h3></p>
+	</footer>
+</body>
+</html>

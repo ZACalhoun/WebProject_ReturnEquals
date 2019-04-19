@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Return Equals-Files</title>
+	<link rel="stylesheet" href="../styles/category.css">
+</head>
+<body>
+	<header>
+		<h1>Return Equals</h1>
+	</header>
+    <nav id="nav_menu">
+    	<ul>
+       		<li><a href="../Home.html">Home</a></li>
+       		<li><a href="#">Category</a>
+				<ul>
+					<li><a href="Basic_codes.html">Basics</a></li>
+               		<li><a href="Mathematics.html">Mathematics</a></li>
+					<li><a href="Classes.html">Classes</a></li>
+					<li><a href="FlowControl.html">Flow Control</a></li>
+					<li><a href="Files.html">Editing Files</a></li>
+           		</ul>
+			</li>
+       		<li><a href="#"> About Us</a>
+           		<ul>
+					<li><a href="Joker.html">Johnny</a></li>
+               		<li><a href="Riddler.html">Zac</a></li>
+           		</ul>
+       		</li>
+			<li><a href="#">Contact Us</a>
+				<ul>
+					<li><a href="mailto:cretrolize@yahoo.com?subject=Feedback">Feedback</a></li>
+					<li><a href="mailto:johnnyjimenez1993gmail.com?subject=Request">Request</a></li>
+				</ul>
+			</li>
+    	</ul>
+    </nav>
+    <main>
+        <h2>Files</h2>
+			<article>
+				<p>Files have to be opened.</p>
+				<p>Data is then written to the file.</p>
+				<p>Can be <em>input files</em> or <em>output files</em>.</p>
+				<p>Files must be closed prior to program termination.</p><br>
+				<p>There are generally two types of files:</p>
+				<p>-Binary</p>
+				<p>-Text</p>
+			</article>
+		<br>
+			<h2>Writing Text to a File Using PrintWriter Class</h2>
+				<article>
+					<p>To use the <em>PrintWriter</em> class, put the following import statement at the</p> 
+					<p>top of the source file:</p>
+					<p><em>import java.io.*;</em></p><br>
+					<p>To open a file for text output you create an instance of 
+					the <em>PrintWriter</em> class</p>
+					<p><em>PrintWriter outputFile = new PrintWriter("StudentData.txt")</em></p>
+					<p><b>*Pass the name of the file that you wish to open</b></p> 
+					<p><b>as an argument to the PrintWriter constructor.</b></p>
+					<p><b>*WARNING: If the file already exists, it will be</b></p>
+					<p><b>erased and replaced with a new file.</b></p><br>	
+					<p>The <em>PrintWriter</em> class allows you to write data to a file using the <em>print</em></p>
+					<p>and println methods, as you have been using to display data on the screen.</p>
+					<p>Just as with the <em>System.out</em> object, the <em>println</em> method of the <em>PrintWriter</em></p>
+					<p>class will place a newline character after the written data.</p>
+					<p>The print method writes data without writing the newline character.</p><br>
+				<table>
+					<tr>
+						<th>Opens the File.</th>
+						<td>PrintWriter outputFile = new PrintWriter("Names.txt");</td>
+					</tr>
+					<tr>	
+						<th>Writes data to the file.</th>
+						<td>outputFile.println(<b>"Meliodas"</b>);</td>
+					</tr>		
+					<tr>
+						<th>Writes data to the file.</th>
+						<td> outputFile.println(<b>"Ban"</b>);</td>
+					</tr>		
+					<tr>
+						<th>Writes data to the file.</th>
+						<td>outputFile.println(<b>"King/Harlequin"</b>);</td>
+					</tr>			
+					<tr>
+						<th>Writes data to the file.</th>
+						<td>outputFile.println(<b>"Merlin"</b>)</td>
+					</tr>			
+					<tr>
+						<th>Writes data to the file.</th>
+						<td>outputFile.println(<b>"Diane"</b>)</td>
+					</tr>			
+					<tr>
+						<th>Writes data to the file.</th>
+						<td>outputFile.println(<b>"Elizabeth Liones"</b>)</td>
+					</tr>
+					<tr>
+						<th>Writes data to the file.</th>
+						<td>outputFile.println(<b>"Escanor"</b>)</td>
+					</tr>
+					<tr>
+						<th>Closes the file.</th>
+						<td>outputFile.close();</td>
+					</tr>
+				</table>
+			</article>
+				<br>
+					<h2>Exceptions</h2>
+						<article>
+						<br>
+							<p>When something unexpected happens in a Java program, an <em>exception</em> is thrown.</p>
+							<p>The method that is executing when the <em>exception</em> is thrown must  either handle </p>
+							<p>the exception or pass it up the line.</p>
+							<p>To pass it up the line, the method needs a <em>throws</em> clause in the method header.</p>
+							<p>To insert a <em>throws</em> clause in a method header, simply add the word throws</p> 
+							<p>and the name of the expected exception.</p><br>
+							<p><em>PrintWriter</em> objects can <em>throw</em> an <em>IOException</em> we write the <em>throws</em> clause like this:</p>
+							<p>public static void main(String[] args) throws IOException.</p>
+							<p>The <em>Scanner</em> class can throw an <em>IOException</em> when a File object is passed to its constructor.</p>
+							<p>So, we put a <em>throws</em> <em>IOException</em> clause in the header of the method that instantiates the <em>Scanner</em> class.</p>
+						<br>
+				</article>
+			<br>
+		<h2>Appending Text to a File</h2>
+			<article>
+				<br>
+					<p>To avoid erasing a file that already exists, create a <em>FileWriter</em> object in this manner<b>:</b></p>
+					<p><em>FileWriter fw = new FileWriter("names.txt", true);</em></p>
+					<p>Then, create a <em>PrintWriter</em> object in this manner:</p>
+					<p><em>PrintWriter fw = new PrintWriter(fw)<b>:</b></em></p><br>
+				</article>
+			<br>
+		<h2>Specifying a File Location</h2>
+			<article>
+				<br>
+					<p>To avoid erasing a file that already exists, create a FileWriter object in this manner:</p>
+					<p>FileWriter fw = new FileWriter("names.txt", true);</p><br>
+					<p>Then, create a PrintWriter object in this manner:
+					<p>PrintWriter fw = new PrintWriter(fw);</p><br>
+					<p>On a Windows computer, paths contain backslash (\) characters.</p>
+					<p>Remember, if the backslash is used in a string literal, it is the escape character so</p>
+					<p>you must use two of them:</p>
+					<p>PrintWriter outFile = new PrintWriter("A:\\PriceList.txt");</p><br>
+					<p>This is only necessary if the backslash is in a string literal.</p>
+					<p>If the backslash is in a <em>String</em> object then it will be handled properly.</p><br>
+					<p>Fortunately, Java allows Unix style filenames using the forward slash (/) to separate directories:</p>
+					<p>PrintWriter outFile = new PrintWriter("/home/rharrison/names.txt");</p><br>
+				</article>
+					<br>
+						<h2>Reading Data From a File</h2>
+				<article>
+					<br>
+						<p>You use the <em>File</em> class and the <em>Scanner</em> class to read data from a file<b>:</b></p>	
+					<table>
+						<tr>
+							<th>Pass the name of the file as an argument 
+							<p>to the File class constructor.</p></th>
+							<td>File myFile = new File("Customers.txt");</td>
+						</tr>
+						<tr>
+							<th>Pass the File object as an argument to the 
+							<p>Scanner class constructor.</p></th>
+							<td>Scanner inputFile = new Scanner(myFile);</td>
+						</tr>
+					</table>
+				<br>
+				<br>
+					<table>
+						<tr>
+							<th>Scanner keyboard = new Scanner(System.in);</th>
+							<td>Creates an instance of the Scanner class to
+							<p>read from the keyboard</p></td>
+						</tr>
+						<tr>
+							<th>System.out.print("Enter the filename: ");</th>
+							<td>Prompt the user for a filename</td>
+						</tr>
+						<tr>
+							<th>String filename = keyboard.nextLine();</th>
+							<td>Get the filename from the user</td>
+						</tr>
+						<tr>
+							<th>File file = new File(filename);</th>
+							<td>Create an instance of the File class to represent the file</td>
+						</tr>
+						<tr>
+							<th>Scanner inputFile = new Scanner(file);</th>
+							<td>Create an instance of the Scanner class that reads from the file</td>
+						</tr>
+					</table>
+				<br>
+					<br>
+						<p>Once an instance of <em>Scanner</em> is created, data can be read using the same methods that you have used to read keyboard input (<em>nextLine, nextInt, nextDouble,</em> etc).</p>
+					<table>
+						<tr>
+							<th>Open the file.</th>
+							<td>File file = new File("Names.txt");
+							<p>Scanner inputFile = new Scanner(file);</p></td>
+						</tr>
+						<tr>
+							<th>Read a line from the file.</th>
+							<td>String str = inputFile.nextLine();</td>
+						</tr>
+						<tr>
+							<th>Close the file.</th>
+							<td>inputFile.close();</td>
+						</tr>
+					</table>
+						<br>
+							</article>
+						<br>
+							<h2>Detecting the End of a File</h2>
+						<article>
+							<br>
+								<p>The <em>Scanner</em> class’s <em>hasNext()</em> method will return true if another item can be read from the file.</p>
+							<table>
+							<tr>
+								<th>Open the file.</th>
+								<td>File file = new File(filename);
+								<p>Scanner inputFile = new Scanner(file);</p></td>
+							</tr>
+							<tr>
+								<th>Read until the end of the file.</th>
+								<td>while (inputFile.hasNext())
+								<p>{String str = inputFile.nextLine();</p>
+								<p>System.out.println(str);}</p>
+								</td>
+							</tr>
+							<tr>
+								<th>close the file when done.</th>
+								<td>inputFile.close();</td>
+							</tr>
+						</table>
+					<br>
+				</article>
+			</main>    
+		<footer>
+			<p><h3>&copy;Return Equals</h3></p>
+		</footer>
+	</body>
+</html>

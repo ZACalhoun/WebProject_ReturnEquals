@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Return Equals-Flow Control</title>
+	<link rel="stylesheet" href="../styles/category.css">
+</head>
+<body>
+	<header>
+		<h1>Return Equals</h1>
+	</header>
+	<nav id="nav_menu">
+    	<ul>
+       		<li><a href="../Home.html">Home</a></li>
+       		<li><a href="#">Category</a>
+				<ul>
+					<li><a href="Basic_codes.html">Basics</a></li>
+               		<li><a href="Mathematics.html">Mathematics</a></li>
+					<li><a href="Classes.html">Classes</a></li>
+					<li><a href="FlowControl.html">Flow Control</a></li>
+					<li><a href="Files.html">Editing Files</a></li>
+           		</ul>
+			</li>
+       		<li><a href="#"> About Us</a>
+           		<ul>
+					<li><a href="Joker.html">Johnny</a></li>
+               		<li><a href="Riddler.html">Zac</a></li>
+           		</ul>
+       		</li>
+			<li><a href="#">Contact Us</a>
+				<ul>
+					<li><a href="mailto:cretrolize@yahoo.com?subject=Feedback">Feedback</a></li>
+					<li><a href="mailto:johnnyjimenez1993gmail.com?subject=Request">Request</a></li>
+				</ul>
+			</li>
+    	</ul>
+    </nav>
+    <main>
+		<br>
+			<h2>Keywords</h2>
+				<table>
+					<tr>
+						<th>if</th>
+						<td>Decides whether a section of code executes or not.</td>
+						<td>if (coldOutside)
+						<P>wearCoat();</P>
+					</td>
+				</tr>
+				<tr>
+					<th>if-else</th>
+					<td><p>Adds the ability to conditionally execute code when</p> 
+					<p>the if condition is false.</p></td>
+					<td>if (coldOutside)
+					<P>wearCoat();</P>
+					<p>else</p>	
+					<P>wearShorts();</P>
+					</td>
+				</tr>
+						<tr>
+			<th>Nested if-else</th>
+			<td><p>An if statement appears inside another if statement</p>
+			<p>(single or block) it is called a nested if statement.</p></td>
+			<td>if (coldOutside){
+			 <p>if (snowing){</p>
+				<P>wearCoat();}</P>
+			 <p>else{</p>	
+				<P>wearJacket();}}</P>
+			 <p>else{</p>	
+				<P>wearShorts();}</P></td>
+			</tr>
+			<tr>
+				<th>if-else-if</th>
+				<td><p>If expression_1 is true these statements are </p>
+				<p>executed, and the rest of the structure is ignored.</p>
+				<p>Otherwise, if expression_2 is true these statements </p>
+				<p>are executed, and the rest of the structure is ignored.</p></td>
+				<td><P>if (expression_1){</P>
+				<P>statement;</P>
+				<P>statement;}</P>
+				<P>else-if (expression_2){</P>
+				<P>statement;</P>
+				<P>statement;</P>
+				<P>etc.}</P>
+				</td>
+			</tr>
+			<tr>
+				<th>Switch</th>
+				<td><p>Can evaluate an integer type or character type</p> 
+				<p>variable and make decisions based on the value.</p></td>
+				<td>switch (SwitchExpression){
+				<p>case CaseExpression:</p>
+				<p>// statement(s)</p>
+				<p>break;</p>
+				//repeat as needed
+				<p>default:</p>
+				<p>// statement(s)}</p>
+				</td>
+			</tr>
+			<tr>
+				<th>for</th>
+				<td>Provides a compact way to iterate over a range of values. 
+				<p>Programmers often refer to it as the "for loop" because of the</p>
+				<p>way in which it repeatedly loops until a particular condition is</p>
+				<p>satisfied.</p></td>
+				<td>for(int i=1; i<3; i++){
+				<p>System.out.println("Count is: " + i);}</p>
+				<p>Output:</p>
+				<p>Count is: 1</p>
+				<p>Count is: 2</p>
+			  </td>
+			</tr>
+			<tr>
+				<th>while</th>
+				<td>Evaluates expression, which must return a boolean value. If 
+				<p>the expression evaluates to true, the while statement</p> 
+				<p>executes the statement(s) in the while block.</p></td>
+				<td> int count = 1;
+				<p>while (count < 3) {</p>
+				<p>System.out.println("Count is: " + count);</p>
+				<p>count++;</p>
+				<p>Output:</p>
+				<p>Count is: 1</p>
+				<p>Count is: 2</p></td>
+			</tr>
+			<tr>
+				<th>do-while</th>
+				<td>The difference between do-while and while is that do-while
+				<p>evaluates its expression at the bottom of the loop instead of</p> 
+				<p>the top.</p></td>
+				<td>do {
+				<p>System.out.println("Count is: " + count);</p>
+				<p>count++;</p>
+				<p>} while (count < 11);</p>
+				<p>Output:</p>
+				<p>Count is: 1</p>
+				<p>Count is: 2</p></td>
+			</tr>			
+		</table>
+			<br>
+				<h2>Relational Operator</h2>
+					<table>
+						<tr>
+							<th>></th></th>
+							<td>x > y</td></td>
+							<td>Is greater than.</td>
+						</tr>
+						<tr>
+							<th><</th>
+							<td>x < y</td>
+							<td>Is less than.</td>
+						</tr>
+						<tr>
+							<th>>=</th></th>
+							<td>x >= y</td></td>
+							<td>Is greater than or equal to.</td>
+						</tr>
+						<tr>
+							<th><=</th>
+							<td>x <= y</td>
+							<td>Is less than or equal to.</td>
+						</tr>
+						<tr>
+							<th>==</th>
+							<td>x == y</td>
+							<td>Is equal to.</td>
+						</tr>
+						<tr>
+							<th>!=</th>
+							<td>x != y</td>
+							<td>Is not equal to.</td>
+						</tr>
+					</table>
+				<br>
+					<h2>Logical Operators</h2>
+						<table>
+							<tr>
+								<th>&&</th>
+								<td>AND</td>
+								<td><p>Connects two boolean expressions into one. Both expressions
+								<p>must be true for the overall expression to be true</td>
+							</tr>
+							<tr>
+								<th>||</th>
+								<td>OR</td>
+								<td><p>Connects two boolean expressions into one. One or both</p> 
+								<p>expressions must be true for the overall expression to be true.</p> 
+								<p>It is only necessary for one to be true, and it does not matter</p> 
+								<p>which one.</p></td>
+							</tr>
+							<tr>
+								<th>!</th>
+								<td>NOT</td>
+								<td><p>The ! operator reverses the truth of a boolean expression. If</p> 
+								<p>it is applied to an expression that is true, the operator return</p> 
+								<p>false. If it is applied to an expression that is false, the operator</p> 
+								<p>returns true.</p></td>
+							</tr>
+						</table>
+					<br>
+				</main>    
+			<footer>
+		<p><h3>&copy;Return Equals</h3></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* the styles for the elements */
+* {
+  margin: 0;
+  padding: 0;
+ }
+html {
+	background-image: url("../images/UniMatrix.jpg");
+    }
+body {
+	 font-family: "Arial", Helvetica, sans-serif;
+     font-size: 87.5%;
+     width: 800px;
+     margin: 0 auto;
+     background-image: url("../images/SpaciousSpace.jpg");
+    }
+a:focus, a:hover {
+	            font-style: italic;
+                }
+/* the styles for the header */
+header {
+	  padding: 1.5em 0 2em 0;
+	  background-image: url("../images/Multi.jpg");
+	  color: white;
+	  text-align: center;	
+      }
+header h2 {
+	    font-size: 175%;
+	    color: white;
+        }
+header h3 {
+	    font-size: 130%;
+	    font-style: italic;
+        }
+header img {
+	     float: left;
+	     padding: 0 30px;
+         }
+/* the styles for the navigation menu */
+#nav_menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+  		   }
+#nav_menu ul li {
+			 float: left
+            }
+#nav_menu ul li a {
+              display: block;
+              width: 200px;
+              text-align: center;
+              padding: 1em 0;
+              text-decoration: none;
+              background-image: url("../images/LSpeed.jpg");
+              color: white;
+              font-weight: bold;
+			  }
+#nav_menu a.current {
+				   color: yellow;
+				   }
+#nav_menu ul ul {
+			 display: none;
+			 position: absolute;
+			 top: 100%;
+             }
+#nav_menu ul ul li {
+	          float: none;
+			  }
+#nav_menu ul li:hover > ul {
+					  display: block;
+					  }
+#nav_menu > ul::after {
+					 content: "";
+					 clear: both;
+					 display: block;
+					}
+/* the styles for the main content */
+main {
+	clear: left;
+	color: white;
+	background-image: url("../images/SpaciousSpace.jpg");
+	}
+/* the styles for the section */
+section {
+	  width: 525px;
+	  float: right;
+	  padding: .5em 0 20px 20px;
+	  background-image: url("../images/SpaciousSpace.jpg");	
+      }
+section h1 {
+	     font-size: 150%;
+	     padding: .5em 0 .25em 0;
+	     margin: 0;
+         }
+section h2 {
+	     color: white;
+	     font-size: 130%;
+	     padding: .5em 0 .25em 0;
+         }
+section p{
+		padding-right: 1em;
+}
+/* the styles for the article */
+article {
+	  padding: .5em .5em;
+	  color: white;
+      }
+article img {
+		 float: right;
+		 margin: .5em 0 1em 1em;
+	 	 border: 1px solid black;
+         }
+/* the styles for the aside */
+aside {
+	 float: left;
+	 padding: 0 0 20px 20px;
+	 width: 215px;
+	 background-image: url("../images/SpaciousSpace.jpg");
+	 }
+aside h2 {
+	   color: white;
+	   font-size: 130%;
+	   padding: 1em 0 .25em 0;
+       text-align: center;
+	   }
+aside h3 {
+	   font-size: 105%;
+	   padding-top: 2em;
+	   text-align: center;
+       }
+aside img {
+		padding: 2em 2em 0 2.5em;
+        }
+/* the styles for the footer */
+footer {
+	 background-image: url("../images/Multi.jpg");
+	 clear: both;
+	 color: white;
+	 text-align: left;
+     }
+footer p {
+	   text-align: left;
+	   color: white;
+	   padding: 1em;
+       }
+
+#youtube_canvas{
+	padding: 1em;
+}
+@media print {
+	body {
+	     font-family: "Times New Roman", Times, serif;
+		 width: auto;
+		 border: none;
+		 }
+	p {
+	  font-size: 87.5%;
+	  }
+	#nav_menu, aside h2 {
+					  display: none;
+					  }
+	section {
+		  width: 5in;
+		  padding-right: 0;
+		  }
+	aside {
+		 width: 2in;
+		 padding-top: 1em;
+		 padding-left: 0;
+		 float: none;
+		}
+	aside h2 {
+		   font-size: 100%;
+		   }
+	aside a {
+		  text-decoration: none;
+		  color: black;
+		  }
+	footer p {
+		   padding-top: .75em;
+		   border-top: 3px solid #931420;
+		   }
+}

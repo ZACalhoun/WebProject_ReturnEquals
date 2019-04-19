@@ -1,0 +1,141 @@
+/* the styles for the elements */
+*{
+ margin: 0;
+ padding: 0;
+ }
+html {
+	background-image: url("../images/UniMatrix.jpg");
+	background-size: 100% 100%;
+	}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 800px;
+    margin: 0 auto;
+	height: stretch;
+    background-image: url("../images/UniMatrix.jpg");
+	background-position: center;
+	text-align: center;	
+    }
+a:focus, a:hover {
+				font-style: italic;
+				}
+/* the styles for the header */
+header {
+	  padding: 1.5em 0 2em 0;
+	  background-image: url("../images/Multi.jpg");
+	  color: white;
+	  text-align: center;
+	  }	  
+/* the styles for the navigation menu */
+#nav_menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+  		   }
+#nav_menu ul li {
+			 float: left
+            }
+#nav_menu ul li a {
+              display: block;
+              width: 200px;
+              text-align: center;
+              padding: 1em 0;
+              text-decoration: none;
+              background-image: url("../images/LSpeed.jpg");
+              color: white;
+              font-weight: bold;
+			  }
+#nav_menu a.current {
+				   color: yellow;
+				   }
+#nav_menu ul ul {
+			 display: none;
+			 position: absolute;
+			 top: 100%;
+             }
+#nav_menu ul ul li {
+	          float: none;
+			  }
+#nav_menu ul li:hover > ul {
+					  display: block;
+					  }
+#nav_menu > ul::after {
+					 content: "";
+					 clear: both;
+					 display: block;
+					}
+/* the styles for the main content */
+main {
+	background-image: url("../images/SpaciousSpace.jpg");
+	clear: left;
+	float: center;
+    }
+/* the styles for the article */
+article {
+	  padding: .5em 0;
+	  text-align: center;
+	  color:white;
+	  }
+
+/* the styles for the footer */
+footer {
+	 background-image: url("../images/Multi.jpg");
+	 clear: both;
+	 color: white;
+	 text-align: left;
+    }
+footer p {
+	  text-align: left;
+	  color: white;
+	  padding: 1em 0;
+      }
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border: .5px solid white;
+	background-color: black;
+	color: white;
+    }
+th, td{
+	 border: 1px solid white;
+	 padding: .2em .7em;
+     }
+h2{
+  color: white;
+  }
+@media print {
+	body {
+	     font-family: "Times New Roman", Times, serif;
+		 width: auto;
+		 border: none;
+		 }
+	p {
+	  font-size: 87.5%;
+	  }
+	#nav_menu, aside h2 {
+					  display: none;
+					  }
+	section {
+		  width: 5in;
+		  padding-right: 0;
+		  }
+	aside {
+		 width: 2in;
+		 padding-top: 1em;
+		 padding-left: 0;
+		 float: none;
+		}
+	aside h2 {
+		   font-size: 100%;
+		   }
+	aside a {
+		  text-decoration: none;
+		  color: black;
+		  }
+	footer p {
+		   padding-top: .75em;
+		   border-top: 3px solid #931420;
+		   }
+}
